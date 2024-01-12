@@ -14,3 +14,8 @@ services:
     depends_on:
       yarn:
         condition: service_completed_successfully
+  backend:
+    <<: *node_container
+    command: backend
+    ports:
+      - 8081:8081
