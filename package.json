@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "shell": "bash"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "@staticcms/core": "^4.0.1"
+    "@staticcms/core": "^4.0.1",
+    "yaml": "^2.3.4"
   }
 }

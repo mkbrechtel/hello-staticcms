@@ -1,0 +1,16 @@
+services:
+  yarn: &node_container
+    image: node:20
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: yarn install
+    entrypoint: yarn
+  vite:
+    <<: *node_container
+    command: dev --host
+    ports:
+      - 5173:5173
+    depends_on:
+      yarn:
+        condition: service_completed_successfully
