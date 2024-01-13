@@ -1,0 +1,4 @@
+top_navbar_links:
+  - requireLogin: false
+    title: Foyer
+    link: https://foyer.numhub.de
